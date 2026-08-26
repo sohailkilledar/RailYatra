@@ -1,0 +1,28 @@
+[
+  {
+    "id": "BK1787748279367",
+    "ownerId": "GUEST-1787748039296",
+    "trainId": "TR101",
+    "trainName": "Pink City Express",
+    "source": "New Delhi",
+    "destination": "Jaipur",
+    "passengerName": "hh",
+    "seats": 1,
+    "status": "Cancelled",
+    "waitlistPosition": null,
+    "createdAt": 1787748279371
+  },
+  {
+    "id": "BK1787749794223",
+    "ownerId": "U1787749759871",
+    "trainId": "TR101",
+    "trainName": "Pink City Express",
+    "source": "New Delhi",
+    "destination": "Jaipur",
+    "passengerName": "Rahul",
+    "seats": 6,
+    "status": "Confirmed",
+    "waitlistPosition": null,
+    "createdAt": 1787749794226
+  }
+]
