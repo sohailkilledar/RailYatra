@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search results | RailYatra</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="brand">
+      <span class="brand-mark">RY</span>
+      <span>RailYatra</span>
+    </div>
+
+    <div class="nav-user">
+      <span class="pill" id="userPill"></span>
+      <button class="btn btn-outline" id="dashboardBtn">My bookings</button>
+      <button class="btn btn-outline" id="logoutBtn">Log out</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1 id="routeTitle">Search results</h1>
+    <p id="routeSubtitle"></p>
+  </div>
+</div>
+
+<div class="container section">
+  <div class="results-toolbar">
+    <div class="sort-group" id="sortGroup">
+      <button class="sort-btn" data-sort="price">Price</button>
+      <button class="sort-btn" data-sort="duration">Duration</button>
+      <button class="sort-btn" data-sort="departure">Departure</button>
+    </div>
+
+    <a href="home.html" class="btn btn-ghost">New search</a>
+  </div>
+
+  <div id="resultsWrap"></div>
+</div>
+
+<footer>
+  RailYatra &middot; A DSA-powered train booking demonstration
+</footer>
+
+<script src="js/session.js"></script>
+<script src="js/api.js"></script>
+<script src="js/results.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search trains | RailNexus</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="brand">
+      <span class="brand-mark">RY</span>
+      <span>RailYatra</span>
+      
+    </div>
+
+    <div class="nav-user">
+      <span class="pill" id="userPill"></span>
+      <button class="btn btn-outline" id="dashboardBtn">My bookings</button>
+      <button class="btn btn-outline" id="logoutBtn">Log out</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Find your train</h1>
+    <p>Search by route or find a specific train by name or number.</p>
+  </div>
+</div>
+
+<div class="container section">
+
+  <div class="card search-panel">
+    <div class="form-error" id="errorBox"></div>
+
+    <div class="search-heading">
+      <h2>Search by route</h2>
+      <p>Choose your departure and destination to find available trains.</p>
+    </div>
+
+    <div class="search-grid">
+      <div class="field">
+        <label for="sourceState">From state</label>
+        <select id="sourceState"></select>
+      </div>
+
+      <div class="field">
+        <label for="sourceCity">From city</label>
+        <select id="sourceCity"></select>
+      </div>
+
+      <div class="field">
+        <label for="destState">To state</label>
+        <select id="destState"></select>
+      </div>
+
+      <button class="btn btn-primary" id="searchBtn">
+        Search trains
+      </button>
+    </div>
+
+    <div class="search-grid" style="margin-top: 16px;">
+      <div class="field">
+        <label for="destCity">To city</label>
+        <select id="destCity"></select>
+      </div>
+
+      <div class="field">
+        <label for="journeyDate">Journey date</label>
+        <input type="date" id="journeyDate">
+      </div>
+
+      <div class="field">
+        <label for="sortPref">Sort results by</label>
+        <select id="sortPref">
+          <option value="price">Lowest price</option>
+          <option value="duration">Shortest duration</option>
+          <option value="departure">Earliest departure</option>
+        </select>
+      </div>
+
+      <button class="swap-btn" id="swapBtn" title="Swap source and destination">
+        &#8646;
+      </button>
+    </div>
+
+    <div class="search-divider">
+      <br>
+      <span>or</span>
+    </div>
+
+    <br>
+    <div class="train-name-search">
+      <div class="search-heading">
+        <h2>Search by train name</h2>
+        <p>Find a train directly using its name or train number.</p>
+      </div>
+
+      <br>
+      <div class="train-name-row">
+        <div class="field">
+          <label for="trainNameInput">Train name or number</label>
+          <input
+            type="text"
+            id="trainNameInput"
+            placeholder="Try Rajdhani Express or TR102"
+          >
+        </div>
+
+        <button class="btn btn-primary" id="trainNameSearchBtn">
+          Search
+        </button>
+      </div>
+
+      <div id="trainNameResults"></div>
+    </div>
+  </div>
+
+  <div class="recent-list" id="recentWrap" style="display:none;">
+    <h3>Recent searches</h3>
+    <div id="recentChips"></div>
+  </div>
+
+</div>
+
+<footer>
+  RailYatra &middot; A DSA Project
+</footer>
+
+<script src="js/session.js"></script>
+<script src="js/api.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

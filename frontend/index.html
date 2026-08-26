@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RailYatra | Train Ticket Booking</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="brand">
+      <span class="brand-mark">RY</span>
+      <span>RailYatra</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="login.html" class="btn btn-outline">Log in</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">Pan-India rail network</div>
+
+      <h1>Book train tickets across India, routed the smart way.</h1>
+
+      <p>
+        RailYatra finds the fastest path between any two stations in the network,
+        even when there is no direct train, and books your seat instantly or
+        places you on the waitlist.
+      </p>
+
+      <div class="hero-actions">
+        <a href="register.html" class="btn btn-primary">Create an account</a>
+        <a href="login.html" class="btn btn-ghost">Log in</a>
+        <button class="btn btn-dark" id="guestBtn">Continue as guest</button>
+      </div>
+    </div>
+
+    <div class="route-graphic">
+      <div class="route-label">Sample route &middot; shortest path</div>
+
+      <div class="route-track">
+        <div class="route-stop">
+          <div class="route-dot"></div>
+          <div>
+            <div class="route-city">New Delhi</div>
+            <div class="route-meta">Departure hub</div>
+          </div>
+        </div>
+
+        <div class="route-stop">
+          <div class="route-dot"></div>
+          <div>
+            <div class="route-city">Bhopal</div>
+            <div class="route-meta">440 km &middot; via Kanpur</div>
+          </div>
+        </div>
+
+        <div class="route-stop">
+          <div class="route-dot"></div>
+          <div>
+            <div class="route-city">Nagpur</div>
+            <div class="route-meta">350 km connecting leg</div>
+          </div>
+        </div>
+
+        <div class="route-stop">
+          <div class="route-dot"></div>
+          <div>
+            <div class="route-city">Mumbai</div>
+            <div class="route-meta">830 km &middot; final leg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  RailYatra &middot; A DSA-powered train booking demonstration
+</footer>
+
+<script src="js/session.js"></script>
+<script>
+  document.getElementById('guestBtn').addEventListener('click', () => {
+    startGuestSession();
+    window.location.href = 'home.html';
+  });
+
+  if (getSession()) {
+    window.location.href = 'home.html';
+  }
+</script>
+</body>
+</html>

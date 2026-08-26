@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My bookings | RailYatra</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="brand">
+      <span class="brand-mark">RY</span>
+      <span>RailYatra</span>
+    </div>
+
+    <div class="nav-user">
+      <span class="pill" id="userPill"></span>
+      <button class="btn btn-outline" id="homeBtn">Search trains</button>
+      <button class="btn btn-outline" id="logoutBtn">Log out</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>My bookings</h1>
+    <p>Manage your train bookings, confirmations, waitlist positions and cancellations.</p>
+  </div>
+</div>
+
+<div class="container section">
+  <div id="bookingsWrap"></div>
+</div>
+
+<footer>
+  RailYatra &middot; A DSA-powered train booking demonstration
+</footer>
+
+<script src="js/session.js"></script>
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
