@@ -39,7 +39,47 @@ const trains = [
   { id: "TR138", name: "Shatabdi Gurugram Express", source: "New Delhi", destination: "Gurugram", departure: "08:00", arrival: "08:45", durationMinutes: 45, price: 120, totalSeats: 60, availableSeats: 60 },
   { id: "TR139", name: "Hubli Express", source: "Bangalore", destination: "Hubli", departure: "22:00", arrival: "05:40", durationMinutes: 400, price: 460, totalSeats: 55, availableSeats: 55 },
   { id: "TR140", name: "Mewar Express", source: "Jaipur", destination: "Udaipur", departure: "06:00", arrival: "13:00", durationMinutes: 420, price: 380, totalSeats: 55, availableSeats: 55 },
-  { id: "TR141", name: "Doon Express", source: "New Delhi", destination: "Dehradun", departure: "22:30", arrival: "05:30", durationMinutes: 270, price: 350, totalSeats: 55, availableSeats: 55 }
+  { id: "TR141", name: "Doon Express", source: "New Delhi", destination: "Dehradun", departure: "22:30", arrival: "05:30", durationMinutes: 270, price: 350, totalSeats: 55, availableSeats: 55 },
+
+  { id: "TR142", name: "Mumbai Rajdhani Express", source: "New Delhi", destination: "Mumbai", departure: "16:25", arrival: "08:15", durationMinutes: 950, price: 1850, totalSeats: 60, availableSeats: 60 },
+  { id: "TR143", name: "August Kranti Rajdhani", source: "New Delhi", destination: "Mumbai", departure: "17:15", arrival: "09:50", durationMinutes: 995, price: 1800, totalSeats: 55, availableSeats: 55 },
+  { id: "TR144", name: "Mumbai Duronto Express", source: "New Delhi", destination: "Mumbai", departure: "23:05", arrival: "14:20", durationMinutes: 915, price: 1700, totalSeats: 50, availableSeats: 50 },
+  { id: "TR145", name: "Paschim Express", source: "New Delhi", destination: "Mumbai", departure: "11:25", arrival: "06:10", durationMinutes: 1125, price: 1150, totalSeats: 60, availableSeats: 60 },
+  { id: "TR146", name: "Swaraj Express", source: "New Delhi", destination: "Mumbai", departure: "08:35", arrival: "05:25", durationMinutes: 1250, price: 1050, totalSeats: 60, availableSeats: 60 },
+  { id: "TR147", name: "Mumbai Rajdhani Express", source: "Mumbai", destination: "New Delhi", departure: "17:00", arrival: "08:55", durationMinutes: 955, price: 1850, totalSeats: 60, availableSeats: 60 },
+  { id: "TR148", name: "August Kranti Rajdhani", source: "Mumbai", destination: "New Delhi", departure: "17:40", arrival: "10:05", durationMinutes: 985, price: 1800, totalSeats: 55, availableSeats: 55 },
+  { id: "TR149", name: "Mumbai Duronto Express", source: "Mumbai", destination: "New Delhi", departure: "23:00", arrival: "14:00", durationMinutes: 900, price: 1700, totalSeats: 50, availableSeats: 50 },
+  { id: "TR150", name: "Paschim Express", source: "Mumbai", destination: "New Delhi", departure: "21:35", arrival: "16:20", durationMinutes: 1125, price: 1150, totalSeats: 60, availableSeats: 60 },
+  { id: "TR151", name: "Swaraj Express", source: "Mumbai", destination: "New Delhi", departure: "20:40", arrival: "17:30", durationMinutes: 1250, price: 1050, totalSeats: 60, availableSeats: 60 },
+
+  { id: "TR152", name: "Kolhapur Express", source: "Pune", destination: "Kolhapur", departure: "06:30", arrival: "10:50", durationMinutes: 260, price: 300, totalSeats: 55, availableSeats: 55 },
+  { id: "TR153", name: "Mahalaxmi Express", source: "Pune", destination: "Kolhapur", departure: "09:15", arrival: "13:40", durationMinutes: 265, price: 310, totalSeats: 55, availableSeats: 55 },
+  { id: "TR154", name: "Pune Kolhapur SF Express", source: "Pune", destination: "Kolhapur", departure: "14:00", arrival: "18:10", durationMinutes: 250, price: 320, totalSeats: 50, availableSeats: 50 },
+  { id: "TR155", name: "Rajarshi Shahu Express", source: "Pune", destination: "Kolhapur", departure: "20:30", arrival: "01:00", durationMinutes: 270, price: 300, totalSeats: 55, availableSeats: 55 },
+  { id: "TR156", name: "Kolhapur Pune Express", source: "Kolhapur", destination: "Pune", departure: "07:00", arrival: "11:20", durationMinutes: 260, price: 300, totalSeats: 55, availableSeats: 55 },
+  { id: "TR157", name: "Mahalaxmi Express", source: "Kolhapur", destination: "Pune", departure: "15:20", arrival: "19:45", durationMinutes: 265, price: 310, totalSeats: 55, availableSeats: 55 },
+  { id: "TR158", name: "Rajarshi Shahu Express", source: "Kolhapur", destination: "Pune", departure: "22:00", arrival: "02:30", durationMinutes: 270, price: 300, totalSeats: 55, availableSeats: 55 },
+  { id: "TR159", name: "Kolhapur SF Express", source: "Kolhapur", destination: "Pune", departure: "05:45", arrival: "09:55", durationMinutes: 250, price: 320, totalSeats: 50, availableSeats: 50 },
+
+  { id: "TR160", name: "Deccan Queen", source: "Mumbai", destination: "Pune", departure: "07:15", arrival: "10:25", durationMinutes: 190, price: 260, totalSeats: 60, availableSeats: 60 },
+  { id: "TR161", name: "Pragati Express", source: "Mumbai", destination: "Pune", departure: "16:10", arrival: "19:20", durationMinutes: 190, price: 250, totalSeats: 60, availableSeats: 60 },
+  { id: "TR162", name: "Indrayani Express", source: "Mumbai", destination: "Pune", departure: "06:00", arrival: "09:10", durationMinutes: 190, price: 230, totalSeats: 55, availableSeats: 55 },
+  { id: "TR163", name: "Intercity Express", source: "Mumbai", destination: "Pune", departure: "18:40", arrival: "21:50", durationMinutes: 190, price: 240, totalSeats: 55, availableSeats: 55 },
+  { id: "TR164", name: "Deccan Queen", source: "Pune", destination: "Mumbai", departure: "17:10", arrival: "20:25", durationMinutes: 195, price: 260, totalSeats: 60, availableSeats: 60 },
+  { id: "TR165", name: "Pragati Express", source: "Pune", destination: "Mumbai", departure: "06:40", arrival: "09:55", durationMinutes: 195, price: 250, totalSeats: 60, availableSeats: 60 },
+  { id: "TR166", name: "Indrayani Express", source: "Pune", destination: "Mumbai", departure: "16:20", arrival: "19:35", durationMinutes: 195, price: 230, totalSeats: 55, availableSeats: 55 },
+  { id: "TR167", name: "Intercity Express", source: "Pune", destination: "Mumbai", departure: "05:30", arrival: "08:45", durationMinutes: 195, price: 240, totalSeats: 55, availableSeats: 55 },
+
+  { id: "TR168", name: "Konkan Kanya Express", source: "Goa", destination: "Mumbai", departure: "19:30", arrival: "05:30", durationMinutes: 600, price: 780, totalSeats: 55, availableSeats: 55 },
+  { id: "TR169", name: "Vidarbha Express", source: "Nagpur", destination: "Mumbai", departure: "19:00", arrival: "07:30", durationMinutes: 750, price: 650, totalSeats: 55, availableSeats: 55 },
+  { id: "TR170", name: "Vidarbha Express", source: "Mumbai", destination: "Nagpur", departure: "20:00", arrival: "08:00", durationMinutes: 720, price: 650, totalSeats: 55, availableSeats: 55 },
+  { id: "TR171", name: "Pune Solapur Express", source: "Solapur", destination: "Pune", departure: "14:00", arrival: "18:20", durationMinutes: 260, price: 320, totalSeats: 55, availableSeats: 55 },
+
+  { id: "TR172", name: "Tippu Express", source: "Mysore", destination: "Bangalore", departure: "09:00", arrival: "11:30", durationMinutes: 150, price: 180, totalSeats: 60, availableSeats: 60 },
+  { id: "TR173", name: "Brindavan Express", source: "Chennai", destination: "Bangalore", departure: "14:00", arrival: "19:50", durationMinutes: 350, price: 420, totalSeats: 60, availableSeats: 60 },
+
+  { id: "TR174", name: "Golden Temple Mail", source: "Amritsar", destination: "New Delhi", departure: "19:00", arrival: "02:00", durationMinutes: 420, price: 490, totalSeats: 60, availableSeats: 60 },
+  { id: "TR175", name: "Shatabdi Express", source: "Chandigarh", destination: "New Delhi", departure: "18:00", arrival: "21:30", durationMinutes: 210, price: 380, totalSeats: 45, availableSeats: 45 }
 ];
 
 module.exports = { trains };
