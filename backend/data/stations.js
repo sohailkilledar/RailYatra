@@ -39,6 +39,8 @@ const routes = [
   ["Mumbai", "Goa", 590, 600],
   ["Pune", "Bangalore", 840, 780],
   ["Pune", "Kolhapur", 235, 260],
+  ["Mumbai", "Kolhapur", 380, 415],
+  ["Pune", "Aurangabad", 235, 255],
   ["Ahmedabad", "Surat", 260, 240],
   ["Hyderabad", "Bangalore", 570, 540],
   ["Hyderabad", "Chennai", 630, 600],
